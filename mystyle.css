@@ -67,7 +67,7 @@ html {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  font-size: 100%;
+  font-size: 1.2rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
@@ -134,9 +134,9 @@ header .link-github span{
 .link-github svg{
 	width: 1em;
 }
-nav ul{
+ul:only-child{
 	padding-left: 0;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	display: flex;
 	list-style-type: none;
 	justify-content: center;
@@ -149,10 +149,47 @@ nav li{
 }
 .container h2{
 	text-align: center;
+	font-size: 2rem;
 }
-#main{
-	margin: 0 100px;
+main, .profile, .styles{
+	margin: 0 auto;
+	width: 70%;
 }
 section h2{
 	margin: 2em;
+}
+.container ul{
+	padding-left: 0;
+	margin: 2em 0;
+	display: grid;
+	grid-template-columns:repeat( auto-fill, minmax(300px, 1fr)); 
+	grid-column-gap: 10px;
+}
+.container ul li{
+	margin: 1em;
+}
+footer .container{
+	width:  
+}
+footer .container h3{
+	margin: 2em 0;
+}
+footer .container a{
+	display: block;
+	text-align: center;
+	margin: 1em auto;
+}
+.profile h4, .container h3{
+	text-align: center;
+}
+.profile ul{
+	border: 1px solid black;
+}
+.profile .container ul{
+	list-style-type: none;
+	display: block;
+	padding-left: 0;
+}
+.profile .container ul li{
+	margin: 0;
 }
