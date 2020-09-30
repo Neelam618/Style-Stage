@@ -1,0 +1,158 @@
+/*@charset "UTF-8";
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Baloo 2 Regular"), local("Baloo-2-Regular"), url("../../fonts/baloo-2-v1-latin-regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Baloo 2";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Baloo 2 Medium"), local("Baloo-2-Medium"), url("../../fonts/baloo-2-v1-latin-500.woff2") format("woff2");
+  font-display: swap;
+}*/
+@font-face{
+	font-family: 'prompt';
+	src:url(fonts/prompt-regular.ttf);
+	font-style: normal;
+	font-weight: 500;
+}
+/*:root {
+  --color-primary: #3a00ff;
+  --color-primary-alt: #6f6ffd;
+  --color-secondary: #d42257;
+  --color-background: #d2fbf7;
+  --color-text: #412d86;
+  --color-light: #fff;
+  --color-anchor: #3a00ff;
+  --font-family: "Baloo 2", sans-serif;
+  --font-weight-strong: 500;
+  --font-size-h1: 6rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.35rem;
+  --font-size-text: 1.15rem;
+  --border-radius: 8px;
+}*/
+
+/*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  margin: 30px;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a{
+	text-decoration: none;
+}
+.container{
+	margin-bottom: 4em;
+}
+header{
+	text-align: center;
+}
+header h1{
+	font-size: 4rem;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-shadow: 3px 3px gray;
+}
+header h2{
+	font-style: italic;
+	margin:1em 0;
+}
+header p{
+	font-size: 1.1rem;
+	margin-bottom: 2em;
+}
+header .link-github span{
+	line-height: 1;
+	text-align: center;
+	display: contents;
+}
+.link-github{
+	font-size: 1.2rem;
+	border: 1px solid black;
+	border-radius: 50px;
+	padding: 0.5em 1.5em; 
+}
+.link-github svg{
+	width: 1em;
+}
+nav ul{
+	padding-left: 0;
+	font-size: 1.2rem;
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	line-height: 0.5;
+	margin-bottom: 4em;
+}
+nav li{
+	margin: 1em;
+}
+.container h2{
+	text-align: center;
+}
+#main{
+	margin: 0 100px;
+}
+section h2{
+	margin: 2em;
+}
