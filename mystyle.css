@@ -125,7 +125,7 @@ header .link-github span{
 	text-align: center;
 	display: contents;
 }
-.link-github{
+header .link-github{
 	font-size: 1.2rem;
 	border: 1px solid black;
 	border-radius: 50px;
@@ -151,14 +151,14 @@ nav li{
 	text-align: center;
 	font-size: 2rem;
 }
-main, .profile, .styles{
+main, .profile, #styles{
 	margin: 0 auto;
 	width: 70%;
 }
 section h2{
 	margin: 2em;
 }
-.container ul{
+section ul{
 	padding-left: 0;
 	margin: 2em 0;
 	display: grid;
@@ -168,16 +168,8 @@ section h2{
 .container ul li{
 	margin: 1em;
 }
-footer .container{
-	width:  
-}
 footer .container h3{
 	margin: 2em 0;
-}
-footer .container a{
-	display: block;
-	text-align: center;
-	margin: 1em auto;
 }
 .profile h4, .container h3{
 	text-align: center;
@@ -185,11 +177,29 @@ footer .container a{
 .profile ul{
 	border: 1px solid black;
 }
-.profile .container ul{
-	list-style-type: none;
-	display: block;
-	padding-left: 0;
-}
 .profile .container ul li{
 	margin: 0;
+}
+.profile .container > a{
+	display: block;
+	text-align: center;
+}
+.features, .profile .container ul{
+	list-style-type: none;
+}
+.features li{
+	border: 1px solid black;
+}
+aside .container > a{
+	display: block;
+	text-align: center;
+}
+#styles ul{
+	padding-left: 0;
+}
+#files .container{
+	display: grid;
+}
+#files .container h3{
+	
 }
