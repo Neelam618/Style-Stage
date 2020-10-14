@@ -8,9 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet');
 
 :root {
-  --color-background: #fff2f7;
-  --color-text: black;
-  --color-anchor: #992c56;
+  --color-background: #511845;
+  --color-sec-background:#ff5733;
+  --color-text: white;
+  --color-anchor: #ff5733;
+
 }
 
 /*
@@ -47,8 +49,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
-  margin: 30px;
-  background-image: linear-gradient(to bottom right, var(--color-background), white 5%, #dec3ce);
+  background-color: var(--color-background);
   color: var(--color-text)
 }
 /* Make images easier to work with */
@@ -80,12 +81,13 @@ a:hover{
 	color: red;
 }
 .container{
-	margin-bottom: 4em;
+	padding-top: 8em;
 }
 header{
-	height: 48vh;
+	height: 85vh;
 	text-align: center;
-	margin: 10em auto;
+	padding: 10em auto;
+	background-color: #900c3f;
 }
 header h1{
 	font-size: 4rem;
@@ -127,28 +129,30 @@ header .link-github:hover{
 }
 ul:only-child{
   	font-family: 'Prompt', sans-serif;
-	position: fixed;
-	top: 0;
-	right: 0;
-	padding: 30px 0;
+	position: sticky;
+	top: 900px;
+	padding: 20px 0;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	width: 100%;
 	margin-top: 0;
-	background-color: var(--color-background);
+	background-color: var(--color-sec-background);
 	line-height: 2;
 }
 nav li a{
 	margin: 1em;
-	color: rgb(255, 0, 0);
+	color: white;
 }
 nav li a:hover{
 	color: black;
 }
 .skip-link{
+	display: block;
 	font-size: 1rem;
 	position: relative;
-	top: 80px;
+	top: 0px;
+	background-color: #900c3f;
+	line-height: 2;
 }
 main, .profile, #styles{
 	margin: 0 auto;
