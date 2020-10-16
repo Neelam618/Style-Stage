@@ -37,10 +37,6 @@ h6 {
   font-family: 'Prompt', sans-serif;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -90,11 +86,13 @@ header{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
-	border: 20px solid pink;
+	border: 20px solid #fcdfa4;
 	border-top: 0;
+	padding-top: 20px;
 }
 header h1{
 	font-size: 4rem;
+	color: black;
 	line-height: 1.2;
 	text-transform: uppercase;
 	text-shadow: 3px 3px 5px #bf88a0;
@@ -131,22 +129,29 @@ header .link-github:hover{
 	color: #fa076f;
 	fill: #fa076f;
 }
-ul:only-child{
+nav{
+	position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+nav ul{
   	font-family: 'Prompt', sans-serif;
-	position: fixed;
-	bottom: 0px;
 	padding: 20px 0;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	margin-top: 0;
-	background-color: var(--color-sec-background);
+	background-color: #bee3bc;
 	line-height: 2;
 	z-index: 1;
 }
 nav li a{
 	margin: 1em;
-	color: white;
+	color: red;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 0.3em 1.5em;
+	background-color: #fff6e2;
 }
 nav li a:hover{
 	color: black;
@@ -156,7 +161,7 @@ nav li a:hover{
 	font-size: 1rem;
 	position: relative;
 	top: 0px;
-	background-color: pink;
+	background-color: #fcdfa4;
 	line-height: 2;
 }
 main, .profile, #styles{
@@ -250,10 +255,6 @@ blockquote{
 	}
 	main, .profile, #styles, blockquote{
 		width: 100%;
-	}
-	.skip-link{
-		font-size: 0.8rem;
-		top: 100px;
 	}
 }
 @media screen and (max-width: 576px){
