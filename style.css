@@ -12,7 +12,6 @@
   --color-sec-background:#ff5733;
   --color-text: white;
   --color-anchor: #ff5733;
-
 }
 
 /*
@@ -50,7 +49,7 @@ body {
   text-rendering: optimizeSpeed;
   overflow-x: hidden;
   background-color: var(--color-background);
-  color: var(--color-text)
+  color: var(--color-text);
 }
 /* Make images easier to work with */
 img {
@@ -86,8 +85,13 @@ a:hover{
 header{
 	height: 85vh;
 	text-align: center;
-	padding: 10em auto;
-	background-color: #900c3f;
+	place-content:center;
+	background-image: url(https://image.freepik.com/free-vector/leaves-background-with-metallic-foil-concept_79603-937.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	border: 20px solid pink;
+	border-top: 0;
 }
 header h1{
 	font-size: 4rem;
@@ -129,8 +133,8 @@ header .link-github:hover{
 }
 ul:only-child{
   	font-family: 'Prompt', sans-serif;
-	position: sticky;
-	top: 900px;
+	position: fixed;
+	bottom: 0px;
 	padding: 20px 0;
 	display: flex;
 	justify-content: center;
@@ -138,6 +142,7 @@ ul:only-child{
 	margin-top: 0;
 	background-color: var(--color-sec-background);
 	line-height: 2;
+	z-index: 1;
 }
 nav li a{
 	margin: 1em;
@@ -151,7 +156,7 @@ nav li a:hover{
 	font-size: 1rem;
 	position: relative;
 	top: 0px;
-	background-color: #900c3f;
+	background-color: pink;
 	line-height: 2;
 }
 main, .profile, #styles{
