@@ -44,7 +44,7 @@ body {
   font-size: 2rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   background-color: var(--color-background);
   color: var(--color-text);
 }
@@ -80,7 +80,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 85vh;
+	min-height: 96vh;
 	text-align: center;
 	background-image: url(https://image.freepik.com/free-vector/leaves-background-with-metallic-foil-concept_79603-937.jpg);
 	background-repeat: no-repeat;
@@ -242,9 +242,6 @@ blockquote{
 	padding: 1em;
 }
 @media screen and (max-width: 1080px){
-	header{
-		height: 100vh;
-	}
 	nav ul{
 		justify-content: center;
 		flex-wrap: wrap;
