@@ -137,6 +137,7 @@ header .link-github:hover svg{
 nav{
 	position: sticky;
   position: -webkit-sticky;
+  z-index: 1;
   top: 0;
 }
 nav ul{
@@ -178,13 +179,9 @@ section h2{
 	font-size: 2.5rem;
 	padding: 2em 0;
 }
-
-
-
 section h2{
-    background-image: url(https://image.freepik.com/free-vector/golden-rectangle-frame-with-glitter-background_1017-26588.jpg);
-    background-position: center;
-    background-size: 100% 100%;
+    /*background-image: url(https://image.freepik.com/free-vector/retro-dirty-empty-frame-grunge-background_1017-26678.jpg);*/
+    /*background-size: 100% 100%;*/
 }
 section ul, #styles ul, .page-footer .container ul{
 	padding-left: 0;
@@ -247,7 +244,7 @@ section ul{
 	padding-bottom: 2em;
 }
 blockquote{
-	border: 2px solid #fab1cd;
+	
 	text-align: center;
 	padding: 1em;
 	margin: 0 auto;
