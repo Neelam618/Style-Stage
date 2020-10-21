@@ -45,7 +45,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   /*overflow-x: hidden;*/
-  background-color: var(--color-background);
+  /*background-color: var(--color-background);*/
   color: var(--color-text);
 }
 /* Make images easier to work with */
@@ -175,7 +175,16 @@ main, .profile, #styles{
 }
 section h2{
 	font-family: 'Satisfy', cursive;
-	margin: 2em 0;
+	font-size: 2.5rem;
+	padding: 2em 0;
+}
+
+
+
+section h2{
+    background-image: url(https://image.freepik.com/free-vector/golden-rectangle-frame-with-glitter-background_1017-26588.jpg);
+    background-position: center;
+    background-size: 100% 100%;
 }
 section ul, #styles ul, .page-footer .container ul{
 	padding-left: 0;
