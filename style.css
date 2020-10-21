@@ -106,11 +106,14 @@ header h2{
 header p{
 	font-size: 2rem;
 }
+header .link-github{
+	color: 
+}
+header .link-github:hover{
+	color: pink;
+}
 header .link-github span{
 	display: block;
-	/*line-height: 1;
-	text-align: center;
-	display: contents;*/
 }
 header .link-github path{
 	transition: fill .6s cubic-bezier(0.4, 0, 1, 1);
@@ -120,11 +123,16 @@ header .link-github:hover path{
 	fill: black;
 }
 
-.link-github svg{
+header .link-github svg{
 	width: 1.5em;
 	fill: white;
   	filter: drop-shadow(0 0 0.75rem crimson);
 }
+
+header .link-github:hover svg{
+	transform: scale(1.4);
+}
+
 nav{
 	position: sticky;
   position: -webkit-sticky;
