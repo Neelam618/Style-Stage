@@ -82,7 +82,7 @@ header{
 	align-items: center;
 	min-height: 96vh;
 	text-align: center;
-	background-image: url(https://image.freepik.com/free-vector/leaves-background-with-metallic-foil-concept_79603-937.jpg);
+	background-image: url(https://image.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148592871.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
@@ -295,7 +295,7 @@ blockquote{
 	background-color: #7d7d7d;
 	color: white;
 	border-radius: 15px;
-	width: 350px;
+	max-width: 350px;
 	margin: 0 auto;
 }
 .link-guidelines:hover, .profile .container > a:hover, #styles .container > a:hover{
@@ -303,10 +303,12 @@ blockquote{
 	background-color: #f9fce1;
 
 }
-
 .page-footer{
 	background-color: #c2a7b3;
 	padding: 1em;
+}
+.page-footer svg{
+	width: 0.6em;
 }
 @media screen and (max-width: 1080px){
 	nav ul{
