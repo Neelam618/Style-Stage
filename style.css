@@ -47,9 +47,6 @@ body {
   /*overflow-x: hidden;*/
   /*background-color: var(--color-background);*/
   color: var(--color-text);
-  background-image: url(https://image.freepik.com/free-vector/pink-floral-patterned-background-vector_53876-85184.jpg);
-  background-image: url(https://www.freepik.com/free-vector/simple-pattern-leaves-pink-background_3439441.htm#page=12&query=floral+pattern+floral+background&position=23);
-  background-image: url(https://www.freepik.com/free-vector/hand-drawn-floral-pattern-pastel-colors_909865.htm#page=11&query=floral+pattern+floral+background&position=48);
   background-image: url(https://image.freepik.com/free-vector/cute-flat-style-tiny-white-daisy-flower-blue-background-seamless-pattern_70155-426.jpg);
 }
 
@@ -199,7 +196,6 @@ section.container{
 }
 section.container h2{
 	font-family: 'Satisfy', cursive;
-	font-size: 2.5rem;
 	padding: 2em 0 1em 0;
 	margin-bottom: 0;
 }
@@ -219,9 +215,6 @@ section.container ul{
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 1em;
-	/*display: grid;
-	grid-template-columns:repeat( auto-fill, minmax(300px, 1fr)); 
-	grid-column-gap: 10px;*/
 }
 .container ul li{
 	margin: 0.3em;
@@ -241,7 +234,7 @@ section.container ul{
 	display: block;
 	text-align: center;
 }
-.features, .profile .container ul, ul:only-child, .page-footer .container ul{
+.features, .profile .container ul, nav ul, .page-footer .container ul{
 	list-style-type: none;
 }
 .features li a{
@@ -260,13 +253,29 @@ section.container ul{
 }
 #files .container h3{
 	grid-area: header;
+	margin-bottom: 0;
 }
+#files .container h3{
+background:
+    linear-gradient(to right, black 5px, transparent 5px) 0 0,
+    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-color: #fff7f1;
+  padding: 0.5em 1em;
+ }
 #files .container a:nth-child(4){
 	grid-area: link3;
 }
 #files .container a:nth-child(2), #files .container a:nth-child(3), #files .container a:nth-child(4){
-	border-bottom: 2px solid red;
-	padding: 0.5em 1em;
+	padding: 0.3em 1em;
 	border-radius: 15px;
 	background-color: #fdd8e2;
 }
@@ -328,7 +337,8 @@ blockquote{
 	#files .container{
 	grid-template-columns: 1fr;
 	grid-template-areas: "header" "link1" "link2" "link3";
-	grid-row-gap: 15px;
+	/*grid-row-gap: 60px;*/
+	/*grid-column-gap: 90px;*/
 	width:auto;
 	}
 	header h2{
