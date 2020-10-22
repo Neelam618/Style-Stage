@@ -47,7 +47,12 @@ body {
   /*overflow-x: hidden;*/
   /*background-color: var(--color-background);*/
   color: var(--color-text);
+  background-image: url(https://image.freepik.com/free-vector/pink-floral-patterned-background-vector_53876-85184.jpg);
+  background-image: url(https://www.freepik.com/free-vector/simple-pattern-leaves-pink-background_3439441.htm#page=12&query=floral+pattern+floral+background&position=23);
+  background-image: url(https://www.freepik.com/free-vector/hand-drawn-floral-pattern-pastel-colors_909865.htm#page=11&query=floral+pattern+floral+background&position=48);
+  background-image: url(https://image.freepik.com/free-vector/cute-flat-style-tiny-white-daisy-flower-blue-background-seamless-pattern_70155-426.jpg);
 }
+
 /* Make images easier to work with */
 img {
   display: block;
