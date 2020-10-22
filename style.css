@@ -268,7 +268,7 @@ background:
 
   background-repeat: no-repeat;
   background-size: 15px 15px;
-  background-color: #fff7f1;
+  background-color: #F8ECD2;
   padding: 0.5em 1em;
  }
 #files .container a:nth-child(4){
@@ -277,11 +277,15 @@ background:
 #files .container a:nth-child(2), #files .container a:nth-child(3), #files .container a:nth-child(4){
 	padding: 0.3em 1em;
 	border-radius: 15px;
-	background-color: #fdd8e2;
+	background-color: #F7C77B;
+	color: black;
 }
 #files .container a:nth-child(2):hover, #files .container a:nth-child(3):hover, #files .container a:nth-child(4):hover{
-	background-color: initial;
-	border: 1px solid pink;
+	background-color: #F5FAF4;
+	border: 1px solid transparent;
+}
+#styles .container{
+	margin-bottom: 2em;
 }
 .page-footer .container ul{
 	padding-bottom: 2em;
