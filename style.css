@@ -192,15 +192,20 @@ section.container{
   margin-bottom: 2em;
   padding-bottom: 3em;
 }
-section h2{
+section.container h2{
 	font-family: 'Satisfy', cursive;
 	font-size: 2.5rem;
-	padding: 2em 0;
+	padding: 2em 0 1em 0;
+	margin-bottom: 0;
+}
+section.container h3{
+	padding: 2em 0 1em 0;
+	margin:0;
 }
 section ul, #styles ul, .page-footer .container ul{
 	padding-left: 0;
 }
-section ul{
+section.container ul{
 	background-color: #7d7d7d;
 	border-radius: 20px;
 	margin: 1em 0;
@@ -287,9 +292,18 @@ blockquote{
   background-color: #fed9ca;
 }
 .link-guidelines, .profile .container > a, #styles .container > a{
-	border-bottom: 10px solid #9e7b8b;
-	padding-bottom: 12px;
+	background-color: #7d7d7d;
+	color: white;
+	border-radius: 15px;
+	width: 350px;
+	margin: 0 auto;
 }
+.link-guidelines:hover, .profile .container > a:hover, #styles .container > a:hover{
+	color: black;
+	background-color: #f9fce1;
+
+}
+
 .page-footer{
 	background-color: #c2a7b3;
 	padding: 1em;
@@ -311,10 +325,7 @@ blockquote{
 	width:auto;
 	}
 	header h2{
-		font-size: 1.5rem;
-	}
-	body, header .link-github{
-		font-size: 1rem;
+		font-size: 3rem;
 	}
 	.profile ul, #styles .container ul {
 		padding: 1em 0;
