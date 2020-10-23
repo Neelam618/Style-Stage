@@ -79,7 +79,7 @@ a{
 	color: var(--color-anchor)
 }
 a:hover{
-	color: red;
+	color: rgb(99, 190, 233);
 }
 header{
 	display: flex;
