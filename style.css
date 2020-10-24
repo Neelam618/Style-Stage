@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 @font-face{
 
@@ -47,9 +48,6 @@ body {
   /*overflow-x: hidden;*/
   /*background-color: var(--color-background);*/
   color: var(--color-text);
-  background-image: url(https://image.freepik.com/free-vector/pink-floral-patterned-background-vector_53876-85184.jpg);
-  background-image: url(https://www.freepik.com/free-vector/simple-pattern-leaves-pink-background_3439441.htm#page=12&query=floral+pattern+floral+background&position=23);
-  background-image: url(https://www.freepik.com/free-vector/hand-drawn-floral-pattern-pastel-colors_909865.htm#page=11&query=floral+pattern+floral+background&position=48);
   background-image: url(https://image.freepik.com/free-vector/cute-flat-style-tiny-white-daisy-flower-blue-background-seamless-pattern_70155-426.jpg);
 }
 
@@ -80,7 +78,6 @@ a{
 }
 a:hover{
 	color: rgb(99, 190, 233);
-}
 header{
 	display: flex;
 	justify-content: center;
@@ -134,11 +131,6 @@ header .link-github svg{
 	fill: white;
   	filter: drop-shadow(0 0 0.75rem crimson);
 }
-
-header .link-github:hover svg{
-	transform: scale(1.4);
-}
-
 nav{
 	position: sticky;
   position: -webkit-sticky;
@@ -157,10 +149,11 @@ nav ul{
 }
 nav li a{
 	margin: 0.5em;
-	color: red;
+	color: black;
 	border-radius: 10px;
 	padding: 0.2em 0.8em;
 	background-color: #F8ECD2;
+	transition: all 0.3s ease-in-out;
 }
 nav li a:hover{
 	color: black;
@@ -174,6 +167,7 @@ nav li a:hover{
 	top: 0px;
 	background-color: #F5F5EB;
 	line-height: 2;
+	transition: all 0.3s ease-in-out;
 }
 main, .profile, #styles{
 	margin: 0 auto;
@@ -199,7 +193,6 @@ section.container{
 }
 section.container h2{
 	font-family: 'Satisfy', cursive;
-	font-size: 2.5rem;
 	padding: 2em 0 1em 0;
 	margin-bottom: 0;
 }
@@ -219,11 +212,8 @@ section.container ul{
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 1em;
-	/*display: grid;
-	grid-template-columns:repeat( auto-fill, minmax(300px, 1fr)); 
-	grid-column-gap: 10px;*/
 }
-.container ul li{
+section.container ul li{
 	margin: 0.3em;
 	padding: 0 0.5em;
 	border-radius: 10px;
@@ -233,21 +223,55 @@ section.container ul{
 	text-align: center;
 }
 .profile ul, #styles .container ul{
-	border: 10px solid pink;
 	line-height: 2;
 	padding: 2em;
+	background:
+    linear-gradient(to right, black 10px, transparent 10px) 0 0,
+    linear-gradient(to right, black 10px, transparent 10px) 0 100%,
+    linear-gradient(to left, black 10px, transparent 10px) 100% 0,
+    linear-gradient(to left, black 10px, transparent 10px) 100% 100%,
+    linear-gradient(to bottom, black 10px, transparent 10px) 0 0,
+    linear-gradient(to bottom, black 10px, transparent 10px) 100% 0,
+    linear-gradient(to top, black 10px, transparent 10px) 0 100%,
+    linear-gradient(to top, black 10px, transparent 10px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+  background-color: white;
+}
+li.profile-title, li.profile-author, li.profile-twitter, li.profile-website, #styles ul li{
+	margin: 0.3em;
+	padding: 0 0.5em;
+	border-radius: 10px;
+	background-color: #F8ECD2;
 }
 .profile .container > a, aside .container > a, #files .container a, .link-guidelines, .profile .container > a, #styles .container > a{
 	display: block;
 	text-align: center;
 }
-.features, .profile .container ul, ul:only-child, .page-footer .container ul{
+.features, .profile .container ul, nav ul, .page-footer .container ul{
 	list-style-type: none;
 }
-.features li a{
-	border-bottom: 1px solid red;
-	padding-bottom: 2px;
+.profile h4{
+	margin: 2em 0 1em 0;
+	font-size: 3rem;
 }
+section.container ol{
+	list-style: none;
+  	counter-reset: my-awesome-counter;
+}
+section.container ol li{
+	counter-increment: my-awesome-counter;
+
+}
+section.container ol li::before{
+	content: counter(my-awesome-counter) ". ";
+  	color: red;
+  	font-weight: bold;
+  	font-size: 3rem;
+  	font-family: 'Josefin Sans', sans-serif;
+}
+
 #files .container{
 	width: 500px;
 	margin: 0 auto;
@@ -260,22 +284,42 @@ section.container ul{
 }
 #files .container h3{
 	grid-area: header;
+	margin-bottom: 0;
 }
+#files .container h3{
+background:
+    linear-gradient(to right, black 5px, transparent 5px) 0 0,
+    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-color: #F8ECD2;
+  padding: 0.5em 1em;
+ }
 #files .container a:nth-child(4){
 	grid-area: link3;
 }
 #files .container a:nth-child(2), #files .container a:nth-child(3), #files .container a:nth-child(4){
-	border-bottom: 2px solid red;
-	padding: 0.5em 1em;
+	padding: 0.3em 1em;
 	border-radius: 15px;
-	background-color: #fdd8e2;
+	background-color: #0e3e44;
+	color: white;
+	transition: all 0.3s ease-in-out;
 }
 #files .container a:nth-child(2):hover, #files .container a:nth-child(3):hover, #files .container a:nth-child(4):hover{
-	background-color: initial;
-	border: 1px solid pink;
+	background-color: #1f666f;
 }
-.page-footer .container ul{
-	padding-bottom: 2em;
+#styles .container{
+	margin-bottom: 2em;
+}
+#styles h2{
+	margin: 2em 0 1em 0;
 }
 blockquote{
 	
@@ -294,26 +338,39 @@ blockquote{
 
   background-repeat: no-repeat;
   background-size: 30px 30px;
-  background-color: #fff7f1;
+  background-color: #F8ECD2;
 }
 .link-guidelines, .profile .container > a, #styles .container > a{
-	background-color: #81A8AD;
+	background-color: #0e3e44;
 	color: white;
 	border-radius: 15px;
 	max-width: 350px;
 	margin: 0 auto;
+	transition: all 0.3s ease-in-out;
 }
 .link-guidelines:hover, .profile .container > a:hover, #styles .container > a:hover{
-	color: black;
-	background-color: #D5E0D4;
-
+	background-color: #1f666f;
+	color: white;
 }
 .page-footer{
-	background-color: #c2a7b3;
+	background-color: #F5FAF4;
 	padding: 1em;
 }
 .page-footer svg{
 	width: 0.6em;
+}
+.page-footer .container ul li{
+	background-color: #F8ECD2;
+	margin: 0.3em auto;
+	width: 30%;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+}
+.page-footer .container ul li a{
+	color: black;
+}
+.page-footer .container ul li:hover{
+	background-color: #f7dea6;
 }
 @media screen and (max-width: 1080px){
 	nav ul{
@@ -328,7 +385,8 @@ blockquote{
 	#files .container{
 	grid-template-columns: 1fr;
 	grid-template-areas: "header" "link1" "link2" "link3";
-	grid-row-gap: 15px;
+	/*grid-row-gap: 60px;*/
+	/*grid-column-gap: 90px;*/
 	width:auto;
 	}
 	header h2{
