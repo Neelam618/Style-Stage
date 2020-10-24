@@ -155,11 +155,26 @@ nav li a{
 	padding: 0.2em 0.8em;
 	background-color: #F8ECD2;
 	transition: all 0.3s ease-in-out;
+	position: relative;
 }
-nav li a:hover{
-	color: black;
-	background-color: #F5FAF4;
+nav ul li > a:hover{
+background:
+    linear-gradient(to right, black 3px, transparent 3px) 0 0,
+    linear-gradient(to right, black 3px, transparent 3px) 0 100%,
+    linear-gradient(to left, black 3px, transparent 3px) 100% 0,
+    linear-gradient(to left, black 3px, transparent 3px) 100% 100%,
+    linear-gradient(to bottom, black 3px, transparent 3px) 0 0,
+    linear-gradient(to bottom, black 3px, transparent 3px) 100% 0,
+    linear-gradient(to top, black 3px, transparent 3px) 0 100%,
+    linear-gradient(to top, black 3px, transparent 3px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  border-radius: unset;
+  background-color: #F5FAF4;
+  color: black;
 }
+
 .skip-link{
 	height: 50px;
 	display: block;
