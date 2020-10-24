@@ -111,10 +111,11 @@ header p{
 	font-size: 2rem;
 }
 header .link-github{
-	font-weight: 600; 
+	font-weight: 600;
 }
 header .link-github:hover{
-	color: #F7C77B;
+	color: #fc8383;
+
 }
 header .link-github span{
 	display: block;
@@ -130,7 +131,7 @@ header .link-github:hover path{
 header .link-github svg{
 	width: 1.5em;
 	fill: white;
-  	filter: drop-shadow(0 0 0.75rem crimson);
+  	filter: drop-shadow(0 0 0.18rem crimson);
 }
 nav{
 	position: sticky;
@@ -282,7 +283,7 @@ section.container ol li{
 }
 section.container ol li::before{
 	content: counter(my-awesome-counter) ". ";
-  	color: red;
+  	color: rgb(99, 190, 233);
   	font-weight: bold;
   	font-size: 3rem;
   	font-family: 'Josefin Sans', sans-serif;
