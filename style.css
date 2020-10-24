@@ -78,6 +78,7 @@ a{
 }
 a:hover{
 	color: rgb(99, 190, 233);
+}
 header{
 	display: flex;
 	justify-content: center;
