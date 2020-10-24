@@ -77,8 +77,7 @@ a{
 	color: var(--color-anchor)
 }
 a:hover{
-	color: #7B887A;
-}
+	color: rgb(99, 190, 233);
 header{
 	display: flex;
 	justify-content: center;
