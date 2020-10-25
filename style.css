@@ -373,7 +373,7 @@ blockquote{
 
 @media screen and (max-width: 1080px){
 	header{
-		border:10px solid #F5F5EB;
+		border: 0;
 	}
 	section.container{
 		padding: 0 1em;
@@ -402,7 +402,7 @@ blockquote{
 		font-size: 1.7rem;
 	}
 	header{
-		min-height: 85vh;
+		min-height: 84vh;
 	}
 	.link-guidelines, .profile .container > a, #styles .container > a{
 		max-width: 230px;
@@ -424,9 +424,9 @@ blockquote{
 	}
 	
 	#files .container{
-	grid-template-columns: 1fr;
-	grid-template-areas: "header" "link1" "link2" "link3";
-	width:auto;
+		grid-template-columns: 1fr;
+		grid-template-areas: "header" "link1" "link2" "link3";
+		width:auto;
 	}
 }
 
