@@ -39,19 +39,19 @@ h2, h3, h4{
 }
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  font-size: 2rem;
-  text-rendering: optimizeSpeed;
-  background-image: url(https://image.freepik.com/free-vector/cute-flat-style-tiny-white-daisy-flower-blue-background-seamless-pattern_70155-426.jpg);
+	min-height: 100vh;
+	font-size: 2rem;
+	text-rendering: optimizeSpeed;
+	background-image: url(https://image.freepik.com/free-vector/cute-flat-style-tiny-white-daisy-flower-blue-background-seamless-pattern_70155-426.jpg);
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+	    animation-duration: 0.01ms !important;
+	    animation-iteration-count: 1 !important;
+	    transition-duration: 0.01ms !important;
+	    scroll-behavior: auto !important;
   }
 }
 a{
@@ -138,21 +138,21 @@ nav li a{
 	position: relative;
 }
 nav ul li > a:hover{
-background:
-    linear-gradient(to right, black 3px, transparent 3px) 0 0,
-    linear-gradient(to right, black 3px, transparent 3px) 0 100%,
-    linear-gradient(to left, black 3px, transparent 3px) 100% 0,
-    linear-gradient(to left, black 3px, transparent 3px) 100% 100%,
-    linear-gradient(to bottom, black 3px, transparent 3px) 0 0,
-    linear-gradient(to bottom, black 3px, transparent 3px) 100% 0,
-    linear-gradient(to top, black 3px, transparent 3px) 0 100%,
-    linear-gradient(to top, black 3px, transparent 3px) 100% 100%;
+	background:
+	    linear-gradient(to right, black 3px, transparent 3px) 0 0,
+	    linear-gradient(to right, black 3px, transparent 3px) 0 100%,
+	    linear-gradient(to left, black 3px, transparent 3px) 100% 0,
+	    linear-gradient(to left, black 3px, transparent 3px) 100% 100%,
+	    linear-gradient(to bottom, black 3px, transparent 3px) 0 0,
+	    linear-gradient(to bottom, black 3px, transparent 3px) 100% 0,
+	    linear-gradient(to top, black 3px, transparent 3px) 0 100%,
+	    linear-gradient(to top, black 3px, transparent 3px) 100% 100%;
 
-  background-repeat: no-repeat;
-  background-size: 12px 12px;
-  border-radius: unset;
-  background-color: #F5FAF4;
-  color: black;
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
+	border-radius: unset;
+	background-color: #F5FAF4;
+	color: black;
 }
 .skip-link{
 	position: absolute;
@@ -285,20 +285,20 @@ section.container ol li::before{
 	margin-bottom: 0;
 }
 #files .container h3{
-background:
-    linear-gradient(to right, black 5px, transparent 5px) 0 0,
-    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
-    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
-    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
-    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
-    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
-    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
-    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
+	background:
+	    linear-gradient(to right, black 5px, transparent 5px) 0 0,
+	    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+	    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+	    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+	    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+	    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+	    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+	    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
 
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
-  background-color: var(--color-background);
-  padding: 0.5em 1em;
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	background-color: var(--color-background);
+	padding: 0.5em 1em;
  }
 #files .container a:nth-child(4){
 	grid-area: link3;
@@ -320,22 +320,10 @@ background:
 	margin: 2em 0 1em 0;
 }
 blockquote{
-	
 	text-align: center;
 	padding: 1em 2em;
 	margin: 0 auto;
-	background:
-	    linear-gradient(to right, black 5px, transparent 5px) 0 0,
-	    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
-	    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
-	    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
-	    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
-	    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
-	    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
-	    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
-
-	background-repeat: no-repeat;
-	background-size: 30px 30px;
+	border-radius: 20px;
 	background-color: var(--color-background);
 }
 .link-guidelines, .profile .container > a, #styles .container > a{
@@ -419,14 +407,47 @@ blockquote{
 	#styles .container ul {
 		padding: 1em 0;
 	}
-	.profile ul, #styles .container ul{
-		padding: 1em;
-	}
 	
 	#files .container{
 		grid-template-columns: 1fr;
 		grid-template-areas: "header" "link1" "link2" "link3";
 		width:auto;
+	}
+
+	section.container{
+		background:
+		    unset;
+		background:
+			linear-gradient(to right, black 5px, transparent 5px) 0 0,
+		    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+		    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+		    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+		    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+		    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+		    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+		    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;;
+		background-repeat: no-repeat;
+		background-size: 35px 35px;
+		background-color: white;
+		padding: 0.5em;
+		margin-bottom: 2em;
+		padding-bottom: 3em;
+	}
+	.profile ul, #styles .container ul{
+		line-height: 2;
+	padding: 1em;
+	background:
+	    linear-gradient(to right, black 5px, transparent 5px) 0 0,
+	    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+	    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+	    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+	    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+	    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+	    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+	    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;;
+	background-repeat: no-repeat;
+	background-size: 35px 35px;
+	background-color: white;
 	}
 }
 
@@ -441,13 +462,15 @@ blockquote{
 		width: 90%;
 	}
 }
-@media screen and (max-width: 329px){
+
+@media screen and (max-width: 330px){
 	header{
 		min-height: 70vh;
 	}
 	section.container{
 		padding: 0.3em;
 		padding-bottom: 2em;
+	}
 }
 
 
