@@ -5,19 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 @font-face{
-
 	font-family: 'Satisfy', cursive;
-
 	font-family: 'Hi Melody', cursive;
 }
 
 :root {
-  --color-background: pink;
-  --color-sec-background:#ff5733;
-  --color-text: black;
-  --color-anchor: #ff5733;
+ 	--color-background: #F8ECD2;
+	--color-anchor: #ff5733;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -26,7 +24,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -43,26 +41,10 @@ h2, h3, h4{
 body {
   min-height: 100vh;
   font-size: 2rem;
-  line-height: 1.5;
   text-rendering: optimizeSpeed;
-  /*overflow-x: hidden;*/
-  /*background-color: var(--color-background);*/
-  color: var(--color-text);
   background-image: url(https://image.freepik.com/free-vector/cute-flat-style-tiny-white-daisy-flower-blue-background-seamless-pattern_70155-426.jpg);
 }
 
-/* Make images easier to work with */
-img {
-  display: block;
-  max-width: 100%;
-}
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -83,18 +65,18 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 96vh;
+	min-height: 100vh;
 	text-align: center;
 	background-image: url(https://image.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148592871.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
 	border: 50px solid #F5F5EB;
-	border-top: 0;
 }
 header h1{
 	font-size: 6rem;
-	margin: 0.5em 0;
+	margin: 0;
+	margin-top: 0.5em;
 	color: black;
 	line-height: 1.2;
 	text-shadow: 5px 5px 0px pink;
@@ -105,24 +87,22 @@ header h2{
 	color: #7B887A;
 	text-align: center;
 	font-size: 2rem;
-	margin: 0 0.5em;
+	margin: 0.8em 2em;
 }
 header p{
-	font-size: 2rem;
+	margin: 0.5em 2em;
 }
 header .link-github{
 	font-weight: 600;
 }
 header .link-github:hover{
 	color: #fc8383;
-
 }
 header .link-github span{
 	display: block;
 }
 header .link-github path{
 	transition: fill .6s cubic-bezier(0.4, 0, 1, 1);
-	
 }
 header .link-github:hover path{
 	fill: black;
@@ -135,9 +115,8 @@ header .link-github svg{
 }
 nav{
 	position: sticky;
-  position: -webkit-sticky;
-  z-index: 1;
-  top: 0;
+	z-index: 1;
+	top: 0;
 }
 nav ul{
 	padding: 5px 0;
@@ -154,7 +133,7 @@ nav li a{
 	color: black;
 	border-radius: 10px;
 	padding: 0.2em 0.8em;
-	background-color: #F8ECD2;
+	background-color: var(--color-background);
 	transition: all 0.3s ease-in-out;
 	position: relative;
 }
@@ -175,16 +154,19 @@ background:
   background-color: #F5FAF4;
   color: black;
 }
-
 .skip-link{
-	height: 50px;
-	display: block;
-	font-size: 1rem;
-	position: relative;
-	top: 0px;
-	background-color: #F5F5EB;
-	line-height: 2;
-	transition: all 0.3s ease-in-out;
+	position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    background-color: var(--color-background);
+    color: black;
+    font-size: 1.125rem;
+    overflow: hidden;
+}
+main[tabIndex="-1"]{
+	outline: none;
 }
 main, .profile, #styles{
 	margin: 0 auto;
@@ -192,21 +174,21 @@ main, .profile, #styles{
 }
 section.container{
 	background:
-    linear-gradient(to right, black 10px, transparent 10px) 0 0,
-    linear-gradient(to right, black 10px, transparent 10px) 0 100%,
-    linear-gradient(to left, black 10px, transparent 10px) 100% 0,
-    linear-gradient(to left, black 10px, transparent 10px) 100% 100%,
-    linear-gradient(to bottom, black 10px, transparent 10px) 0 0,
-    linear-gradient(to bottom, black 10px, transparent 10px) 100% 0,
-    linear-gradient(to top, black 10px, transparent 10px) 0 100%,
-    linear-gradient(to top, black 10px, transparent 10px) 100% 100%;
+	    linear-gradient(to right, black 10px, transparent 10px) 0 0,
+	    linear-gradient(to right, black 10px, transparent 10px) 0 100%,
+	    linear-gradient(to left, black 10px, transparent 10px) 100% 0,
+	    linear-gradient(to left, black 10px, transparent 10px) 100% 100%,
+	    linear-gradient(to bottom, black 10px, transparent 10px) 0 0,
+	    linear-gradient(to bottom, black 10px, transparent 10px) 100% 0,
+	    linear-gradient(to top, black 10px, transparent 10px) 0 100%,
+	    linear-gradient(to top, black 10px, transparent 10px) 100% 100%;
 
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-color: white;
-  padding: 0 2em;
-  margin-bottom: 2em;
-  padding-bottom: 3em;
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+	background-color: white;
+	padding: 0 2em;
+	margin-bottom: 2em;
+	padding-bottom: 3em;
 }
 section.container h2{
 	font-family: 'Satisfy', cursive;
@@ -221,10 +203,9 @@ section ul, #styles ul, .page-footer .container ul{
 	padding-left: 0;
 }
 section.container ul{
-	background-color: #F8ECD2;
+	background-color: var(--color-background);
 	border-radius: 20px;
 	margin: 1em 0;
-	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -243,30 +224,30 @@ section.container ul li{
 	line-height: 2;
 	padding: 2em;
 	background:
-    linear-gradient(to right, black 10px, transparent 10px) 0 0,
-    linear-gradient(to right, black 10px, transparent 10px) 0 100%,
-    linear-gradient(to left, black 10px, transparent 10px) 100% 0,
-    linear-gradient(to left, black 10px, transparent 10px) 100% 100%,
-    linear-gradient(to bottom, black 10px, transparent 10px) 0 0,
-    linear-gradient(to bottom, black 10px, transparent 10px) 100% 0,
-    linear-gradient(to top, black 10px, transparent 10px) 0 100%,
-    linear-gradient(to top, black 10px, transparent 10px) 100% 100%;
+	    linear-gradient(to right, black 10px, transparent 10px) 0 0,
+	    linear-gradient(to right, black 10px, transparent 10px) 0 100%,
+	    linear-gradient(to left, black 10px, transparent 10px) 100% 0,
+	    linear-gradient(to left, black 10px, transparent 10px) 100% 100%,
+	    linear-gradient(to bottom, black 10px, transparent 10px) 0 0,
+	    linear-gradient(to bottom, black 10px, transparent 10px) 100% 0,
+	    linear-gradient(to top, black 10px, transparent 10px) 0 100%,
+	    linear-gradient(to top, black 10px, transparent 10px) 100% 100%;
 
-  background-repeat: no-repeat;
-  background-size: 60px 60px;
-  background-color: white;
+	background-repeat: no-repeat;
+	background-size: 60px 60px;
+	background-color: white;
 }
 li.profile-title, li.profile-author, li.profile-twitter, li.profile-website, #styles ul li{
 	margin: 0.3em;
 	padding: 0 0.5em;
 	border-radius: 10px;
-	background-color: #F8ECD2;
+	background-color: var(--color-background);
 }
 .profile .container > a, aside .container > a, #files .container a, .link-guidelines, .profile .container > a, #styles .container > a{
 	display: block;
 	text-align: center;
 }
-.features, .profile .container ul, nav ul, .page-footer .container ul{
+.features, .profile .container ul, nav ul, .page-footer .container ul, section.container ul{
 	list-style-type: none;
 }
 .profile h4{
@@ -294,10 +275,9 @@ section.container ol li::before{
 	margin: 0 auto;
 	display: grid;
 	grid-template-columns: auto auto;
-	grid-gap: 20px;
 	grid-template-areas: "header header" "link1 link2" "link3 link3" ;
 	justify-items: center;
-	grid-row-gap: 50px;
+	grid-row-gap: 30px;
 }
 #files .container h3{
 	grid-area: header;
@@ -316,7 +296,7 @@ background:
 
   background-repeat: no-repeat;
   background-size: 15px 15px;
-  background-color: #F8ECD2;
+  background-color: var(--color-background);
   padding: 0.5em 1em;
  }
 #files .container a:nth-child(4){
@@ -344,24 +324,24 @@ blockquote{
 	padding: 1em 2em;
 	margin: 0 auto;
 	background:
-    linear-gradient(to right, black 5px, transparent 5px) 0 0,
-    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
-    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
-    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
-    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
-    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
-    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
-    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
+	    linear-gradient(to right, black 5px, transparent 5px) 0 0,
+	    linear-gradient(to right, black 5px, transparent 5px) 0 100%,
+	    linear-gradient(to left, black 5px, transparent 5px) 100% 0,
+	    linear-gradient(to left, black 5px, transparent 5px) 100% 100%,
+	    linear-gradient(to bottom, black 5px, transparent 5px) 0 0,
+	    linear-gradient(to bottom, black 5px, transparent 5px) 100% 0,
+	    linear-gradient(to top, black 5px, transparent 5px) 0 100%,
+	    linear-gradient(to top, black 5px, transparent 5px) 100% 100%;
 
-  background-repeat: no-repeat;
-  background-size: 30px 30px;
-  background-color: #F8ECD2;
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-color: var(--color-background);
 }
 .link-guidelines, .profile .container > a, #styles .container > a{
 	background-color: #0e3e44;
 	color: white;
 	border-radius: 15px;
-	max-width: 350px;
+	max-width: 300px;
 	margin: 0 auto;
 	transition: all 0.3s ease-in-out;
 }
@@ -377,7 +357,7 @@ blockquote{
 	width: 0.6em;
 }
 .page-footer .container ul li{
-	background-color: #F8ECD2;
+	background-color: var(--color-background);
 	margin: 0.3em auto;
 	width: 30%;
 	border-radius: 15px;
@@ -389,30 +369,74 @@ blockquote{
 .page-footer .container ul li:hover{
 	background-color: #f7dea6;
 }
+
 @media screen and (max-width: 1080px){
+	header{
+		border:10px solid #F5F5EB;
+	}
+	section.container{
+		padding: 0 1em;
+		padding-bottom: 2em;
+	}
+	section.container ul{
+		padding: 0;
+	}
+	blockquote{
+		padding: 0.5em;
+	}
 	nav ul{
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 	main, .profile, #styles, blockquote{
-		width: 100%;
+		width: 95%;
 	}
 }
+
 @media screen and (max-width: 576px){
+	body{
+		font-size: 1.7rem;
+	}
+	header{
+		min-height: 85vh;
+	}
+	.link-guidelines, .profile .container > a, #styles .container > a{
+		max-width: 230px;
+	}
+	header h2{
+		font-size: 1.5rem;
+	}
+	#styles .container ul {
+		padding: 1em 0;
+	}
+	.profile ul, #styles .container ul{
+		padding: 1em;
+	}
+	header h1{
+		font-size: 3.5rem;
+	}
 	#files .container{
 	grid-template-columns: 1fr;
 	grid-template-areas: "header" "link1" "link2" "link3";
-	/*grid-row-gap: 60px;*/
-	/*grid-column-gap: 90px;*/
 	width:auto;
 	}
-	header h2{
-		font-size: 3rem;
+}
+
+@media screen and (max-width: 467px){
+	header{
+		min-height: 77vh; 
 	}
-	.profile ul, #styles .container ul {
-		padding: 1em 0;
-	}
-	header h1{
-		font-size: 3rem;
+	.profile ul, #styles .container ul{
+		line-height: 1.5;
 	}
 }
+@media screen and (max-width: 329px){
+	header{
+		min-height: 70vh;
+	}
+	section.container{
+		padding: 0.3em;
+		padding-bottom: 1em;
+}
+
+
