@@ -256,6 +256,7 @@ li.profile-title, li.profile-author, li.profile-twitter, li.profile-website, #st
 }
 section.container ol{
 	list-style: none;
+	padding-left: 0;
   	counter-reset: my-awesome-counter;
 }
 section.container ol li{
@@ -391,6 +392,9 @@ blockquote{
 	main, .profile, #styles, blockquote{
 		width: 95%;
 	}
+	.page-footer .container ul li{
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 576px){
@@ -403,8 +407,14 @@ blockquote{
 	.link-guidelines, .profile .container > a, #styles .container > a{
 		max-width: 230px;
 	}
+	header h1{
+		font-size: 3.5rem;
+	}
 	header h2{
 		font-size: 1.5rem;
+	}
+	nav{
+		position: relative;
 	}
 	#styles .container ul {
 		padding: 1em 0;
@@ -412,9 +422,7 @@ blockquote{
 	.profile ul, #styles .container ul{
 		padding: 1em;
 	}
-	header h1{
-		font-size: 3.5rem;
-	}
+	
 	#files .container{
 	grid-template-columns: 1fr;
 	grid-template-areas: "header" "link1" "link2" "link3";
@@ -429,6 +437,9 @@ blockquote{
 	.profile ul, #styles .container ul{
 		line-height: 1.5;
 	}
+	.page-footer .container ul li{
+		width: 90%;
+	}
 }
 @media screen and (max-width: 329px){
 	header{
@@ -436,7 +447,7 @@ blockquote{
 	}
 	section.container{
 		padding: 0.3em;
-		padding-bottom: 1em;
+		padding-bottom: 2em;
 }
 
 
