@@ -56,7 +56,7 @@ body {
 }
 a{
 	text-decoration: none;
-	color: var(--color-anchor)
+	color: var(--color-anchor);
 }
 a:hover{
 	color: #0086c5;
