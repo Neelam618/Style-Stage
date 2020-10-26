@@ -11,7 +11,7 @@
 
 :root {
  	--color-background: #F8ECD2;
-	--color-anchor: #ff5733;
+	--color-anchor: #ce2400;
 }
 html{
 	scroll-behavior: smooth;
@@ -59,7 +59,7 @@ a{
 	color: var(--color-anchor)
 }
 a:hover{
-	color: rgb(99, 190, 233);
+	color: #0086c5;
 }
 header{
 	display: flex;
