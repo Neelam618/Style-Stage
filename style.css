@@ -165,6 +165,14 @@ nav ul li > a:hover{
     font-size: 1.125rem;
     overflow: hidden;
 }
+.skip-link:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+}
 main[tabIndex="-1"]{
 	outline: none;
 }
